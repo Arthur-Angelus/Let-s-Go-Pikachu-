@@ -45,6 +45,10 @@ main {
     bottom: 0;
     z-index: -1;
 }
+main .pikachu {
+    justify-content: center;
+    z-index: 3;
+}
 
 main .content-text {
     position: absolute;
@@ -53,6 +57,7 @@ main .content-text {
     width: 240px;
     transform: translateX(-100%);
     text-align: end;
+    justify-content: first baseline;
 }
 main .content-background {
     position: absolute;
@@ -73,38 +78,27 @@ main .content-image {
 footer {
     height: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-right: 75px;
+    justify-content: space-between;
     padding-left: 75px;
     color: #FFFFFF;
     font-weight: 100;
 }
-
+footer .content-text {
+        transform: translateX(0%);
+        top: 80px;
+        font-size: 3rem;
+        width: 400px;
+        text-align: top left;
+        color: brown;
+}
 footer div {
-    width: 500px;
-    font-size: larger;
+    width: 750px;
+    font-size: 2rem;
     color: brown;
 }
 
-@media (max-width: 768px) {
-    header {
-        padding-left: 25px;
-    }
-
-    .content-text {
-        transform: translateX(0%);
-        top: 80px;
-        font-size: 1rem;
-        width: 100px;
-        text-align: center;
-    }
-
-    .content-image {
-        height: 70vh;
-    }
-
-    footer {
-        padding: 0px 25px;
-    }
+footer span{
+    color: brown;
+    align-items: end;
 }

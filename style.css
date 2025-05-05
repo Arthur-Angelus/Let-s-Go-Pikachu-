@@ -53,16 +53,16 @@ main .pikachu {
 main .content-text {
     position: absolute;
     color: #ffffff;
-    font-size: 10.0rem;
+    font-size: 20.0rem;
     width: 240px;
     transform: translateX(-100%);
     text-align: end;
     justify-content: first baseline;
 }
 main .content-background {
-    position: absolute;
+    position: relative;
     color: #ffffff;
-    font-size: 30.0rem;
+    font-size: 35.0rem;
     width: 240px;
     transform: translateX(-100%);
     text-align: top left;
